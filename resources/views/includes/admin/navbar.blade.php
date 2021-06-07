@@ -1,10 +1,11 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
     <a class="navbar-brand brand-logo" href="{{ route('home') }}">
+      <i class="fad fa-map-marked-alt"></i>
       Pemetaan Longsor
     </a>
     <a class="navbar-brand brand-logo-mini" href="{{ route('home') }}">
-      P
+      <i class="fad fa-map-marked-alt"></i>
     </a>
   </div>
   <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -15,8 +16,7 @@
       <li class="nav-item nav-profile dropdown">
         <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
           <div class="nav-profile-img">
-            <img src="{{ url('frontend-admin/assets/images/faces/face1.jpg') }}" alt="image">
-            <span class="availability-status online"></span>
+            <img src="https://ui-avatars.com/api/?background=03befc&color=ffffff&bold=true&name=Admin" alt="image">
           </div>
           <div class="nav-profile-text">
             <p class="mb-1 text-black">Admin</p>

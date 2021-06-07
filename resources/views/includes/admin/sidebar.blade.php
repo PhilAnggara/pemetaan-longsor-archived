@@ -10,7 +10,7 @@
       <a class="nav-link" href="{{ route('home') }}">
         <span class="menu-title">Daerah Rawan</span>
         {{-- <i class="mdi mdi-home menu-icon"></i> --}}
-        <i class="fad fa-map-marked-alt fa-sm menu-icon"></i>
+        <i class="fas fa-map-marked-alt fa-sm menu-icon"></i>
       </a>
     </li>
   </ul>
