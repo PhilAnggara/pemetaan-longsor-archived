@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+// *******
+// GLOBAL
+
+// Variable
+$color-1: #85C8DD;
+$color-2: #1874C3;
+$bg-prim: #f8f8f8;
+$bg-admin: #F3F3F3;
+$bg-picture: #D88989;
+$rawan-tinggi: #DC3737;
+$rawan-sedang: #FFEA2C;
+$rawan-rendah: #70DD3D;
+$gradient-1: linear-gradient(#ACB6E5, #86FDE8);
+$btn-col-1: #FFAA64;
+$btn-col-1-hov: #ffc697;
+$f-prim: 'Assistant', sans-serif;
+$f-navbar: 'Kaushan Script', cursive;
+
+body {
+  background: $bg-prim;
+  font-family: $f-prim;
+}
+
+// Utilities
+.btn-prim {
+  background-color: $btn-col-1;
+  color: #ffffff;
+  height: 42px;
+  width: 110px;
+  &:hover {
+    background-color: $btn-col-1-hov;
+    color: #ffffff;
+  }
+}
+.text-tinggi {
+  color: $rawan-tinggi;
+}
+.text-sedang {
+  color: $rawan-sedang;
+}
+.text-rendah {
+  color: $rawan-rendah;
+}
+.status-rendah {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $rawan-rendah;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.status-sedang {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $rawan-sedang;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.status-tinggi {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: $rawan-tinggi;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+// END OF GLOBAL
+// *************
+
+
+nav.navbar {
+  padding: 10px 50px;
+  background-color: $color-1 !important;
+  .navbar-brand {
+    font-family: $f-navbar;
+    font-size: 28px;
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+main {
+  .content {
+    margin-top: 50px;
+
+    .header-card {
+      background-color: $color-2;
+      height: 50px;
+      border-radius: 10px;
+      .card-body {
+        padding: 12px 20px;
+        h1 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
+    .map-card {
+      margin-top: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      .card-body {
+        padding: 0;
+      }
+    }
+    .data-keseluruhan {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+    table {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+// ******
+// MOBILE
+@media (max-width: 992px) {
+  @import 'mobile';  
+}
